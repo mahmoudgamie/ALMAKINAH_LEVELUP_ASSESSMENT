@@ -23,7 +23,6 @@ function drawForm() {
 
                 } else {
                     if (element.type !== 'submit' && element.type !== 'hidden') {
-
                         var div = $('<div></div>')
                         var input = $('<input>');
                         var label = $('<label></label>');
@@ -46,11 +45,9 @@ function drawForm() {
 drawForm();
 
 function submit(e) {
-    var checked;
     e.preventDefault();
-    if ($('input[name=final_submission]').is(":checked")) {
-        checked = $('input[name=final_submission]').val();
-    }
+    var checked = $('input[type=checkbox]').prop('checked');
+    console.log(checked);
     var data = {
         name: $('input[name=name]').val(),
         repo: $('input[name=repo]').val(),
