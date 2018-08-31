@@ -9,6 +9,7 @@ h1 {
 }
 
 input {
+    width: 60%;
     margin: 20px;
     padding-left: 10px;
 }
