@@ -1,0 +1,33 @@
+.container {
+    width: 30%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    margin: 20px;
+    padding-left: 10px;
+}
+
+div {
+    width: 80%;
+    margin: auto;
+}
+
+label {
+    display: inline-block;
+    width: 20%;
+}
+
+#final_submission {
+    width: 30%;
+}
+
+button {
+    margin: 10px 20px;
+    width: 90%;
+}
