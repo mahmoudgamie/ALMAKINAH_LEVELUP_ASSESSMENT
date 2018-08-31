@@ -46,13 +46,17 @@ function drawForm() {
 drawForm();
 
 function submit(e) {
+    var checked;
     e.preventDefault();
+    if ($('input[name=final_submission]').is(":checked")) {
+        checked = $('input[name=final_submission]').val();
+    }
     var data = {
         name: $('input[name=name]').val(),
         repo: $('input[name=repo]').val(),
         email: $('input[name=email]').val(),
         age: $('input[name=age]').val(),
-        final_submission: $('input[name=final_submission]').val(),
+        final_submission: checked,
         secret: secret
     }
     var settings = {
