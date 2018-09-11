@@ -68,7 +68,7 @@ function submit(e) {
         'data': JSON.stringify(data)
     }
 
-    $.ajax(settings).done(function (response) {
-        console.log(response);
+    $.ajax(settings).done(function (res) {
+        console.log(res);
     });
 }
